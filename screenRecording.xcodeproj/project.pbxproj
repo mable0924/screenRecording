@@ -14,6 +14,7 @@
 		1E5303262A3B87A000D3600F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5303252A3B87A000D3600F /* ViewController.swift */; };
 		1E5303282A3B894900D3600F /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5303272A3B894900D3600F /* ScreenRecorder.swift */; };
 		1E53032A2A3B899700D3600F /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5303292A3B899700D3600F /* DocumentPicker.swift */; };
+		1E5303402A3B950300D3600F /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 1E5303312A3B950300D3600F /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1E5303272A3B894900D3600F /* ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
 		1E5303292A3B899700D3600F /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
 		1E53032D2A3B8EBA00D3600F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5303312A3B950300D3600F /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		1E53030A2A3B874E00D3600F = {
 			isa = PBXGroup;
 			children = (
+				1E5303312A3B950300D3600F /* Readme.md */,
 				1E5303152A3B874E00D3600F /* screenRecording */,
 				1E5303142A3B874E00D3600F /* Products */,
 			);
@@ -140,6 +143,7 @@
 			files = (
 				1E53031F2A3B874F00D3600F /* Preview Assets.xcassets in Resources */,
 				1E53031B2A3B874F00D3600F /* Assets.xcassets in Resources */,
+				1E5303402A3B950300D3600F /* Readme.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
