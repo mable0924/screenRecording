@@ -7,20 +7,17 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    @ObservedObject var screenRecorder = ScreenRecorder.shared
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("Start Recording") {
+                screenRecorder.startRecording()
+            }
+            
+            
         }
-        .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

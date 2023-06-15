@@ -11,6 +11,9 @@
 		1E5303192A3B874E00D3600F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5303182A3B874E00D3600F /* ContentView.swift */; };
 		1E53031B2A3B874F00D3600F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E53031A2A3B874F00D3600F /* Assets.xcassets */; };
 		1E53031F2A3B874F00D3600F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E53031E2A3B874F00D3600F /* Preview Assets.xcassets */; };
+		1E5303262A3B87A000D3600F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5303252A3B87A000D3600F /* ViewController.swift */; };
+		1E5303282A3B894900D3600F /* ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5303272A3B894900D3600F /* ScreenRecorder.swift */; };
+		1E53032A2A3B899700D3600F /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5303292A3B899700D3600F /* DocumentPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,10 @@
 		1E53031A2A3B874F00D3600F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E53031C2A3B874F00D3600F /* screenRecording.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = screenRecording.entitlements; sourceTree = "<group>"; };
 		1E53031E2A3B874F00D3600F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E5303252A3B87A000D3600F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E5303272A3B894900D3600F /* ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenRecorder.swift; sourceTree = "<group>"; };
+		1E5303292A3B899700D3600F /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		1E53032D2A3B8EBA00D3600F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +59,15 @@
 		1E5303152A3B874E00D3600F /* screenRecording */ = {
 			isa = PBXGroup;
 			children = (
+				1E53032D2A3B8EBA00D3600F /* Info.plist */,
 				1E5303162A3B874E00D3600F /* screenRecordingApp.swift */,
 				1E5303182A3B874E00D3600F /* ContentView.swift */,
 				1E53031A2A3B874F00D3600F /* Assets.xcassets */,
 				1E53031C2A3B874F00D3600F /* screenRecording.entitlements */,
 				1E53031D2A3B874F00D3600F /* Preview Content */,
+				1E5303252A3B87A000D3600F /* ViewController.swift */,
+				1E5303272A3B894900D3600F /* ScreenRecorder.swift */,
+				1E5303292A3B899700D3600F /* DocumentPicker.swift */,
 			);
 			path = screenRecording;
 			sourceTree = "<group>";
@@ -139,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5303262A3B87A000D3600F /* ViewController.swift in Sources */,
+				1E5303282A3B894900D3600F /* ScreenRecorder.swift in Sources */,
 				1E5303192A3B874E00D3600F /* ContentView.swift in Sources */,
+				1E53032A2A3B899700D3600F /* DocumentPicker.swift in Sources */,
 				1E5303172A3B874E00D3600F /* screenRecordingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +283,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = screenRecording/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -277,8 +293,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -307,6 +323,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = screenRecording/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -315,8 +333,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
